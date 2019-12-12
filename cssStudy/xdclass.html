@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    body {
+        background: #f6f6f6;
+    }
+
+    .header {
+        position: fixed;
+        left: 0;
+        top: 0;
+        background: white;
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        padding-left: 5%;
+    }
+
+    .header img {
+        vertical-align: middle;
+    }
+
+    .logo {
+        width: 82px;
+        height: 24px;
+        margin-right: 45%;
+    }
+
+    .search,
+    .userimg {
+        width: 24px;
+        height: 24px;
+        margin-left: 20px;
+    }
+
+    .bannerwrap {
+        margin-top: 50px;
+    }
+
+    .bannerwrap img {
+        width: 100%;
+    }
+
+    .classifywrap {
+        margin-top: 10px;
+        background: white;
+        padding-bottom: 5px;
+    }
+
+    .classify {
+        overflow: hidden;
+    }
+
+    .classify li {
+        float: left;
+        width: 25%;
+        text-align: center;
+    }
+
+    .classify .list {
+        color: #7e8c8d;
+    }
+
+    .classify .icon {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        border-radius: 50%;
+        background: #4a95dc;
+        color: #fff;
+        font-size: 18px;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .coursewrap {
+        width: 100%;
+        background: white;
+        padding: 0 5%;
+        margin: 10px 0;
+        box-sizing: border-box;
+    }
+
+    .hotwrap {
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .hotwrap img {
+        width: 25px;
+        height: 25px;
+        vertical-align: text-bottom;
+    }
+
+    .courselist {
+        overflow: hidden;
+        margin-bottom: 92px;
+    }
+
+    .courselist li {
+        float: left;
+        width: 48%;
+        margin-bottom: 10px;
+    }
+
+    .courseposter {
+        width: 100%;
+        height: 120px;
+    }
+
+    .courseposter img {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+    }
+
+    .coursetitle {
+        font-size: 12px;
+        margin-top: 5px;
+        color: #333;
+    }
+
+    .levelprice {
+        overflow: hidden;
+        margin-top: 5px;
+    }
+
+    .level {
+        float: left;
+        font-size: 12px;
+        color: #333;
+    }
+
+    .price {
+        float: right;
+        color: red;
+        font-size: 13px;
+    }
+
+    .courselist li:nth-of-type(odd) {
+        margin-right: 4%;
+    }
+
+    #bottomnav {
+        position: fixed;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+    }
+    .nav{
+			width: 100%;
+			height: 100%;
+			border-radius: 50%;
+		}
+</style>
+
+<body>
+    <!-- 头部 -->
+    <div class="header">
+        <img class="logo" src="./img/logo.png" />
+        <img class="search" src="./img/search.png" />
+        <img class="userimg" src="./img/userimg.png" />
+    </div>
+
+    <!-- 轮播图 -->
+    <div class="bannerwrap">
+        <img class="" src="./img/banner.jpeg" />
+    </div>
+
+    <!-- 分类 -->
+    <div class="classifywrap">
+        <ul class="classify">
+            <li>
+                <div class="icon">后</div>
+                <p class="list">后端</p>
+            </li>
+            <li>
+                <div class="icon">前</div>
+                <p class="list">前端</p>
+            </li>
+            <li>
+                <div class="icon">测</div>
+                <p class="list">测试</p>
+            </li>
+            <li>
+                <div class="icon">运</div>
+                <p class="list">运维</p>
+            </li>
+        </ul>
+    </div>
+    <!-- 课程模块 -->
+    <div class="coursewrap">
+        <div class="hotwrap">
+            <img src="./img/hot.png" />
+            热门课程
+        </div>
+        <ul class="courselist">
+            <li>
+                <div class="courseposter">
+                    <img src="./img/1.png" />
+                </div>
+                <p class="coursetitle">Spring Boot 2.x零基础入门到高级实战教程</p>
+                <div class="levelprice">
+                    <p class="level">级别:中级</p>
+                    <p class="price">价格:$29.9</p>
+                </div>
+            </li>
+            <li>
+                <div class="courseposter">
+                    <img src="./img/2.png" />
+                </div>
+                <p class="coursetitle">vue2019全新单页面应用仿京东电商项目</p>
+                <div class="levelprice">
+                    <p class="level">级别:中级</p>
+                    <p class="price">价格:$29.9</p>
+                </div>
+            </li>
+            <li>
+                <div class="courseposter">
+                    <img src="./img/2.png" />
+                </div>
+                <p class="coursetitle">vue2019全新单页面应用仿京东电商项目</p>
+                <div class="levelprice">
+                    <p class="level">级别:中级</p>
+                    <p class="price">价格:$29.9</p>
+                </div>
+            </li>
+            <li>
+                <div class="courseposter">
+                    <img src="./img/1.png" />
+                </div>
+                <p class="coursetitle">Spring Boot 2.x零基础入门到高级实战教程</p>
+                <div class="levelprice">
+                    <p class="level">级别:中级</p>
+                    <p class="price">价格:$29.9</p>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+
+    <!-- 底部导航 -->
+    <div class="classifywrap" id="bottomnav">
+        <ul class="classify">
+            <li>
+                <div class="icon"><img class="nav" src="./img/1.png"></div>
+                <p class="list">首页</p>
+            </li>
+            <li>
+                <div class="icon"><img class="nav" src="./img/2.png"></div>
+                <p class="list">课程</p>
+            </li>
+            <li>
+                <div class="icon"><img class="nav" src="./img/1.png"></div>
+                <p class="list">购物车</p>
+            </li>
+            <li>
+                <div class="icon"><img class="nav" src="./img/2.png"></div>
+                <p class="list">我的</p>
+            </li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
